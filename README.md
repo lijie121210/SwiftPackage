@@ -1,12 +1,12 @@
 # SwiftPackage
 
 The original executable swift initial package structure is
-
-> ProjectName	-- Package.swift
-> 				-- Sources		-- main.swift
-> 				-- Tests
-> 				-- .gitignore
-
+---
+ ProjectName	-- Package.swift
+ 				-- Sources		-- main.swift
+ 				-- Tests
+ 				-- .gitignore
+---
 creating by command:
 `$ swift package init --type executable`
 
@@ -14,11 +14,13 @@ it can't be tested because there is main.swift.
 
 SwiftPackage relayout files and directories 
 
-> ProjectName	-- Package.swift
-> 				-- Sources -- ProjectNameLib.  -- ProjectNameError.swift
-> 							 -- ProjectNameApp   -- main.swift
-> 				-- Tests	 -- ProjectNameTests -- ProjectNameTestCase.swift
-> 				-- .gitignore
+---
+ ProjectName	-- Package.swift
+ 				-- Sources -- ProjectNameLib.  -- ProjectNameError.swift
+ 							 -- ProjectNameApp   -- main.swift
+ 				-- Tests	 -- ProjectNameTests -- ProjectNameTestCase.swift
+ 				-- .gitignore
+---
 
 Then, ProjectNameLib module is testable.
 
